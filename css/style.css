@@ -1,0 +1,352 @@
+body{
+    margin: 0;
+    background: black;
+}
+.logo{
+    display: inline-block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+}
+.logo a{
+    display: block;
+    margin: 9px 0 0 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+}
+.logo-img{
+    width: 150px;
+    padding: 14px;
+}
+.nav{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    align-content: center;
+    padding: 0% 10%;
+    display: flex;
+    z-index: 120;
+    background: rgba(0,0,0,0.5);
+}
+.nav-logo{
+    width:50%;
+}
+.nav-content{
+    width: 50%;
+}
+.nav-content a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav-content a:hover{
+   color: orange;
+}
+.nav-content .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .nav-content a {display: none;}
+  .nav-content a.icon {
+    float: left;
+    padding: 14px 5px;
+    display: block;
+  }
+    .logo-img{width:100px;}
+}
+
+.home{
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    height: 550px;
+    background-position: center;
+    overflow: hidden;
+}
+.name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 0px;
+    border-spacing: 0px;
+}
+.name-des1{
+    margin: 0;
+    font-size: 6vw;
+}
+.name-des{
+    margin: 0;
+    font-size: 2vw;
+}
+.social{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden; 
+    padding: 10% 0%;
+}
+.social a{
+    color: white;
+    text-decoration: none;
+    padding: 0vw 1vw;
+}
+.scroll{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    animation: mymove 1s infinite;
+}
+@keyframes mymove {
+  from {top: 500px;}
+  to {top: 510px;}
+}
+.scroll a{
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+.aboutcontent{
+    left: 4%;
+    top: 10%;
+    color: white;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+    float: left;
+    margin: 300px 20px; 
+    letter-spacing: 2px;
+    border-spacing: 10px;
+}
+.about{
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    min-height: 25vh
+}
+.flex{
+    display: flex;
+}
+h3{
+    color: white;
+    text-decoration: none;
+}
+.photo{
+    max-width: 100%;
+    height: auto;
+    float: right;
+    overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+    .photo {display: none;}
+    .aboutcontent{
+        max-width: 90%;
+        float: inherit;   
+        margin: 20px;
+    }
+}
+.resume-button a{
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    padding: 14px 16px;
+}
+.resume-button a:hover{
+    background:black;
+    color: white;
+    border: 1px solid white;
+}
+.education{
+    background: url(../images/edu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 800px;
+    font-family: "montserrat-extrabold", sans-serif;
+}
+.edu{
+    position: relative;
+    left: 4%;
+    top: 38%;
+    color: white;
+    background:transparent;
+    border: 1px solid white;
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin: 40px 20px; 
+    letter-spacing: 2px;
+    border-spacing: 10px;
+}
+.educontent{
+    position: relative;
+    width: 50%;
+    float: left;
+    margin: 40px 80px;
+}
+.educ{
+    color: white;
+    background:rgba(0,0,0,0.5);
+    border: 1px solid black;
+    text-align: center;
+    margin: 40px 20px; 
+    letter-spacing: 2px;
+}
+@media screen and (max-width:600px){
+    .edu{
+        width:90%;
+        left:1%;
+        top:1%;
+        margin: 10px;
+    }
+    .educontent{
+        width: 100%;
+        margin: 10px;
+    }
+    .education{
+        background-image: url("../images/educ.jfif");
+        height: 1100px;
+        width: auto;
+    }
+}
+.works{
+    background: url(../images/macbook-accessories-1585767118.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    height: 800px;
+}
+.workmain{
+    position: relative;
+    top: 38%;
+    right: 4%;
+    color: white;
+    background:rgba(0,0,0,0.5);
+    border: 1px solid white;
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin: 40px 20px; 
+    letter-spacing: 2px;
+    border-spacing: 10px;
+}
+.workdetails{
+    position: relative;
+    color: white;
+    width: 40%;
+    background:rgba(0,0,0,0.5);
+    border: 1px solid white;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 20px; 
+    letter-spacing: 2px;
+    float: left;
+    height:300px;
+}
+.workdetails img{
+    margin:10px;
+    width: auto;
+    height: 90px;
+}
+.workdet{
+    position: relative;
+    width: 50%;
+    float: left;
+    margin: 5px 100px;
+}
+.workdetails a{
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+}
+h2{
+    color: orange;
+}
+@media screen and (max-width:600px){
+    .workmain{
+        width:90%;
+        left:1%;
+        top:1%;
+        margin: 10px;
+    }
+    .workdetails{
+        width: 100%;
+        margin: 10px;
+        height:300px;
+    }
+    .workdet{
+        width:90%;
+        margin:1%;
+    }
+    .works{
+        height: 1200px;
+        width: auto;
+    }
+    .contactleft{
+        width:90%;
+        left:1%;
+        top:0%;
+        margin: 10px;
+    }
+    .contactright{
+        width: 100%;
+        margin: 10px;
+        align-content: center;
+    }
+    
+    #works { display: flex; flex-direction: column; }
+    #workdet { order: 2; }
+    #workmain { order: 1; }
+}
+.contact{
+    width: auto;
+    height: auto;
+}
+
+.contactleft{
+    position: relative;
+    top: 30%;
+    right: 4%;
+    color: white;
+    width: 40%;
+    text-align: center;
+    float: left;
+    margin: 40px 20px; 
+    letter-spacing: 2px;
+    border-spacing: 10px;
+}
+.contactright{
+    position: relative;
+    top: 10%;
+    color: white;
+    width: 40%;
+    margin: 20px 20px; 
+    letter-spacing: 2px;
+    float: left;
+}
+.contactbtn{
+    background: transparent;
+    border: 1pxsolid white;
+    padding: 14px 16px;
+    border-radius: 5%;
+}
+.contactbtn a{
+    color: white;
+    text-decoration: none;
+}
